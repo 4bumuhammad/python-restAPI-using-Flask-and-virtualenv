@@ -56,9 +56,70 @@ Buka pada browser
 </p>
 
 
+
+### Pada code selanjutnya akan method POST data.
+
 ---
 
-#### Pada code selanjutnya akan POST data.
+#### &#x1F680; Code [002app.py]: 
+
+        from crypt import methods
+        from urllib import response
+        from flask import Flask, request
+        from flask_restful import Resource, Api
+        from flask_cors import CORS
+
+        app=Flask(__name__)
+
+        api=Api(app)
+
+        CORS(app)
+
+        identitas={} 
+
+        class ContohResource(Resource):
+
+            def post(self):
+                nama=request.form["nama"] 
+                umur=request.form["umur"]
+                identitas["nama"]=nama
+                identitas["umur"]=umur
+                response={"msg":"Data berhasil dimasukkan"} 
+                return response 
+
+            def get(self):
+                return identitas
+        
+        api.add_resource(ContohResource, "/api", methods=["GET","POST"])
+
+        if __name__ == "__main__":
+            app.run(debug=True, port=5005)
+
+
+
+
+- Jalankan code :
+
+    ❯ python3 002app.py
+
+        * Serving Flask app '002app'
+        * Debug mode: on
+        WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+        * Running on http://127.0.0.1:5005
+        Press CTRL+C to quit
+        * Restarting with stat
+        * Debugger is active!
+        * Debugger PIN: 106-564-594 
+
+
+
+
+
+
+
+
+
+
 
 - buka postman, buat request POST, dan masukkan key pada multiplatform
 

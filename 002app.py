@@ -1,4 +1,3 @@
-# import library
 from crypt import methods
 from urllib import response
 from flask import Flask, request
@@ -15,11 +14,6 @@ identitas={}
 
 class ContohResource(Resource):
 
-    def get(self):
-        #response={"msg":"Hallo dunia, ini app restful pertamaku"}
-
-        return identitas
- 
     def post(self):
         nama=request.form["nama"] 
         umur=request.form["umur"]
@@ -28,7 +22,9 @@ class ContohResource(Resource):
         response={"msg":"Data berhasil dimasukkan"} 
         return response 
 
-# setup resourcenya
+    def get(self):
+        return identitas
+ 
 api.add_resource(ContohResource, "/api", methods=["GET","POST"])
 
 if __name__ == "__main__":
