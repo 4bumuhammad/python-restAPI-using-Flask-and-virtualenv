@@ -141,7 +141,7 @@ Buka pada browser
 
 
 
-
+## Result :
 
 - dapat menggunakan postman, buat request POST, dan masukkan key pada multiplatform.
 
