@@ -143,45 +143,35 @@ Buka pada browser
 
 
 
-- buka postman, buat request POST, dan masukkan key pada multiplatform
+- dapat menggunakan postman, buat request POST, dan masukkan key pada multiplatform.
 
-    [Body] : form-data
-    nama : adim
-    umur : 23
-    [Send]
-
-    op:
-    {
-        "msg": "Data berhasil dimasukkan"
-    }
+<p align="center">
+    <img src="./gambar-petunjuk/ss_002app_post_method_kirim-data.png" alt="ss_002app_post_method_kirim-data" style="display: block; margin: 0 auto;">
+</p>
 
 
-- tangkap data hasil GET pada url browser
+atau curl :
 
-    http://localhost:5005/api
-
-    op:
-    {
-        "nama": "admin",
-        "umur": "23"
-    }
-
-#### atau bisa test tanpa browser menggunakan CURL
-
-    ❯ curl -X POST \
-        > -F 'nama=Andrea' \
-        > -F 'umur=90' \
-        > http://localhost:5005/api
-        {
-            "msg": "Data berhasil dimasukkan"
-        }
+    curl --location 'http://localhost:5005/api' \
+    --form 'nama="admin"' \
+    --form 'umur="28"'    
 
 
 
-    ❯ curl -X GET \
-        > -H "Content-Type: application/json" \
-        > http://localhost:5005/api
-        {
-            "nama": "admin",
-            "umur": "23"
-        }
+- tangkap data pada method GET dapat menggunakan postman atau pada browser.
+
+<p align="center">
+    <img src="./gambar-petunjuk/ss_002app_get_method_kirim-data-browser.png" alt="ss_002app_get_method_kirim-data-browser" style="display: block; margin: 0 auto;">
+</p>
+<p align="center">browser</p>
+
+<p align="center">
+    <img src="./gambar-petunjuk/ss_002app_get_method_kirim-data-postman.png" alt="ss_002app_get_method_kirim-data-postman" style="display: block; margin: 0 auto;">
+</p>
+<p align="center">postman</p>
+
+atau curl :
+
+    curl --location 'http://localhost:5005/api'
+
+
