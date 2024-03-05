@@ -57,7 +57,7 @@ Buka pada browser
 
 
 
-### Pada code selanjutnya akan method POST data.
+### Pada contoh code selanjutnya akan method POST data.
 
 ---
 
