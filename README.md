@@ -70,6 +70,8 @@
             * Debugger PIN: 106-564-594
             127.0.0.1 - - [05/Mar/2024 08:22:11] "GET /api HTTP/1.1" 200 -
 
+## Result :
+
 Buka pada browser 
 
     URL http://localhost:5005/api
