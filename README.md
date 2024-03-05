@@ -2,7 +2,7 @@
 
 ---
 
-#### Begin Project:
+#### Begin Project :
 
         ❯ virtualenv myenviro
 
