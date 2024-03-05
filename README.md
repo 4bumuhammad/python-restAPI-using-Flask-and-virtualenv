@@ -54,7 +54,7 @@
 
 
 
-#### &#x1FAB4; Menjalankan code :
+#### &#x1F3C3; Menjalankan code :
 
     ❯  python3 001app.py
 
@@ -70,7 +70,7 @@
             * Debugger PIN: 106-564-594
             127.0.0.1 - - [05/Mar/2024 08:22:11] "GET /api HTTP/1.1" 200 -
 
-## Result :
+## &#x1F3F5; Result :
 
 Buka pada browser 
 
@@ -128,7 +128,7 @@ Buka pada browser
 
 
 
-#### &#x1FAB4; Menjalankan code :
+#### &#x1F3C3; Menjalankan code :
 
     ❯ python3 002app.py
 
@@ -143,7 +143,7 @@ Buka pada browser
 
 
 
-## Result :
+## &#x1F3F5; Result :
 
 - dapat menggunakan postman, buat request POST, dan masukkan key pada multiplatform.
 
