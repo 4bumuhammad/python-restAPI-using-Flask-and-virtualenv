@@ -26,7 +26,7 @@
 
 
 
-#### Menjalankan code :
+#### &#x1FAB4; Menjalankan code :
 
     ❯  python3 001app.py
 
