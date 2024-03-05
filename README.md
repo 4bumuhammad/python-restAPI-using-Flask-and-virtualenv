@@ -70,7 +70,7 @@
             * Debugger PIN: 106-564-594
             127.0.0.1 - - [05/Mar/2024 08:22:11] "GET /api HTTP/1.1" 200 -
 
-## &#x1F3F5; Result :
+## &#x1F4AE; Result :
 
 Buka pada browser 
 
@@ -143,7 +143,7 @@ Buka pada browser
 
 
 
-## &#x1F3F5; Result :
+## &#x1F4AE; Result :
 
 - dapat menggunakan postman, buat request POST, dan masukkan key pada multiplatform.
 
