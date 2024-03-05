@@ -126,7 +126,7 @@ Buka pada browser
 
 
 
-- Jalankan code :
+#### &#x1FAB4; Menjalankan code :
 
     ❯ python3 002app.py
 
@@ -138,12 +138,6 @@ Buka pada browser
         * Restarting with stat
         * Debugger is active!
         * Debugger PIN: 106-564-594 
-
-
-
-
-
-
 
 
 
